@@ -9,10 +9,10 @@
     body {
       background: url('banner.jpg') center/cover no-repeat fixed;
       background-size: cover;
-      color: #333; /* Màu chữ tối để dễ đọc trên nền sáng */
+      color: #f8f9fa; /* Màu chữ mặc định cho toàn trang là trắng nhạt */
     }
     .overlay {
-      background-color: rgba(255, 255, 255, 0.85); /* Nền trắng trong suốt nhẹ */
+      background-color: rgba(0, 0, 0, 0.75); /* Nền tối hơn, giữ ảnh banner ẩn nhẹ phía sau */
       padding: 60px 20px;
     }
     nav a {
@@ -25,27 +25,46 @@
       margin-right: 8px;
     }
     a {
-      color: #e65c00; /* Màu cam đậm, hợp với logo và banner */
+      color: #ffc107; /* Màu vàng cam sáng cho link */
       text-decoration: none;
     }
     a:hover {
         text-decoration: underline;
     }
     .card {
-      background-color: rgba(255, 255, 255, 0.95); /* Nền trắng gần như đục, làm nổi bật nội dung */
-      color: #333; /* Màu chữ tối trong card */
-      border: 1px solid rgba(0, 0, 0, 0.125); /* Thêm đường viền nhẹ */
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Thêm bóng nhẹ */
+      background-color: rgba(33, 37, 41, 0.9); /* Nền tối (tương tự navbar) với độ trong suốt nhẹ */
+      color: #f8f9fa; /* Màu chữ trắng nhạt trong card */
+      border: 1px solid rgba(255, 255, 255, 0.1); /* Đường viền trắng nhạt */
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Bóng tối mạnh hơn */
     }
     h1, h5 {
-        color: #d14a00; /* Màu cam/đỏ đậm cho tiêu đề để nổi bật */
+        color: #ffc107; /* Màu vàng cam sáng cho tiêu đề */
+    }
+    /* CSS cho logo */
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
+    /* Điều chỉnh padding của navbar để logo lớn không bị tràn */
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* CSS cho footer */
+    .site-footer {
+        background-color: #212529; /* Màu nền tối tương tự bg-dark */
+        color: #ffcc99; /* Màu cam nhạt */
+        padding: 20px 0;
+    }
+    .site-footer p {
+        margin-bottom: 0;
     }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="logo-navbar.png" alt="D&A Law" height="80"></a>
+      <a class="navbar-brand" href="index.html"><img src="logo-navbar.png" alt="D&A Law"></a>
       <div>
         <a href="index.html" class="text-white">Trang chủ</a>
         <a href="gioi-thieu.html" class="text-white">Giới thiệu</a>
@@ -75,7 +94,7 @@
 
           <h5 class="mt-4">Liên hệ</h5>
           <p><strong>Email:</strong> <a href="mailto:longvinhnguyen@gmail.com">longvinhnguyen@gmail.com</a></p>
-          <p><strong>Website:</strong> <a href="https://www.dragonassociates.vn" target="_blank">www.dragonassociates.vn</a></p>
+          <p><strong>Website:</strong> <a href="https://www.dragonassociates.vn" target="_blank">https://www.dragonassociates.vn</a></p>
           <p><strong>Kênh Viber:</strong>
             <img src="invite.viber.com.ico" alt="Viber" class="icon">
             <a href="http://bit.ly/3HnSBce" target="_blank">http://bit.ly/3HnSBce</a>
@@ -85,7 +104,7 @@
     </div>
   </div>
 
-<footer class="text-center py-4 site-footer">
+  <footer class="text-center py-4 site-footer">
     &copy; 2025 Dragon & Associates Law Firm. All rights reserved.
   </footer>
 </body>
