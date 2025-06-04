@@ -8,10 +8,11 @@
   <style>
     body {
       background: url('banner.jpg') center/cover no-repeat fixed;
-      color: #fff;
+      background-size: cover;
+      color: #333; /* Màu chữ tối để dễ đọc trên nền sáng */
     }
     .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(255, 255, 255, 0.85); /* Nền trắng trong suốt nhẹ */
       padding: 60px 20px;
     }
     nav a {
@@ -24,7 +25,20 @@
       margin-right: 8px;
     }
     a {
-      color: #ffc107;
+      color: #e65c00; /* Màu cam đậm, hợp với logo và banner */
+      text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.95); /* Nền trắng gần như đục, làm nổi bật nội dung */
+      color: #333; /* Màu chữ tối trong card */
+      border: 1px solid rgba(0, 0, 0, 0.125); /* Thêm đường viền nhẹ */
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Thêm bóng nhẹ */
+    }
+    h1, h5 {
+        color: #d14a00; /* Màu cam/đỏ đậm cho tiêu đề để nổi bật */
     }
   </style>
 </head>
@@ -43,7 +57,7 @@
   <div class="overlay">
     <div class="container">
       <h1 class="mb-4">Giới thiệu về Dragon & Associates</h1>
-      <div class="card bg-dark text-white border-light mb-4">
+      <div class="card mb-4">
         <div class="card-body">
           <p><strong>Dragon & Associates (D&A)</strong> là văn phòng luật sư được thành lập vào năm 2018 với mục tiêu trở thành một trong những đơn vị tư vấn pháp lý uy tín hàng đầu tại Việt Nam.</p>
 
@@ -61,7 +75,7 @@
 
           <h5 class="mt-4">Liên hệ</h5>
           <p><strong>Email:</strong> <a href="mailto:longvinhnguyen@gmail.com">longvinhnguyen@gmail.com</a></p>
-          <p><strong>Website:</strong> <a href="https://www.dragonassociates.vn" target="_blank">www.dragonassociates.vn</a></p>
+          <p><strong>Website:</strong> <a href="https://lnv777.wixsite.com/dragonassociates" target="_blank">lnv777.wixsite.com/dragonassociates</a></p>
           <p><strong>Kênh Viber:</strong>
             <img src="invite.viber.com.ico" alt="Viber" class="icon">
             <a href="http://bit.ly/3HnSBce" target="_blank">http://bit.ly/3HnSBce</a>
