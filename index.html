@@ -7,14 +7,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
+      background: url('banner.jpg') center/cover no-repeat fixed;
+      color: #fff;
     }
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('logo.jpg.jpeg') center/contain no-repeat;
-      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 100px 20px;
       text-align: center;
-      background-color: #333;
     }
     .hero h1 {
       font-size: 3rem;
@@ -22,9 +21,7 @@
     }
     .section {
       padding: 60px 20px;
-    }
-    .contact-info p {
-      margin-bottom: 5px;
+      background-color: rgba(0,0,0,0.6);
     }
     nav a {
       margin: 0 15px;
@@ -32,10 +29,9 @@
   </style>
 </head>
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">D&A Law</a>
+      <a class="navbar-brand" href="#"><img src="logo-navbar.png" alt="D&A Law" height="40"></a>
       <div>
         <a href="index.html" class="text-white">Trang chủ</a>
         <a href="gioi-thieu.html" class="text-white">Giới thiệu</a>
@@ -46,38 +42,16 @@
 
   <div class="hero">
     <h1>Dragon & Associates</h1>
-    <p class="lead">Tư vấn pháp lý chuyên nghiệp - hiệu quả - tin cậy</p>
+    <p class="lead">Tư vấn pháp lý chuyên nghiệp – hiệu quả – tin cậy</p>
   </div>
 
-  <div class="container">
-    <div class="section">
-      <h2>Giới thiệu</h2>
-      <p>Văn phòng luật sư Vĩnh Long & Cộng sự (Dragon & Associates - D&A) được thành lập từ năm 2018, hướng tới mục tiêu trở thành công ty luật nội địa theo chuẩn mực quốc tế, giá thành phù hợp, uy tín với khách hàng trong nước và quốc tế.</p>
-    </div>
-
-    <div class="section">
-      <h2>Lĩnh vực hoạt động</h2>
-      <ul>
-        <li>Tư vấn Doanh nghiệp và Đầu tư</li>
-        <li>Mua bán & Sáp nhập Doanh nghiệp</li>
-        <li>Pháp luật Lao động & Quản trị doanh nghiệp</li>
-        <li>Tư vấn Bất động sản và Xây dựng</li>
-        <li>Tranh tụng tại Tòa án và Trọng tài quốc tế</li>
-      </ul>
-    </div>
-
-    <div class="section contact-info">
-      <h2>Liên hệ</h2>
-      <p><strong>Luật sư:</strong> Nguyễn Vĩnh Long</p>
-      <p><strong>Email:</strong> longvinhnguyen@gmail.com</p>
-      <p><strong>Điện thoại:</strong> +84 347 354 686</p>
-      <p><strong>Website:</strong> <a href="https://www.dragonassociates.vn" target="_blank">https://www.dragonassociates.vn</a></p>
-    </div>
+  <div class="container section">
+    <h2>Giới thiệu</h2>
+    <p>Văn phòng luật sư Vĩnh Long & Cộng sự (Dragon & Associates - D&A) được thành lập từ năm 2018, hướng tới mục tiêu trở thành công ty luật nội địa theo chuẩn mực quốc tế, giá thành phù hợp, uy tín với khách hàng trong nước và quốc tế.</p>
   </div>
 
-  <footer class="text-center text-muted py-4">
+  <footer class="text-center text-muted py-4 bg-dark text-white">
     &copy; 2025 Dragon & Associates Law Firm. All rights reserved.
   </footer>
-
 </body>
 </html>
