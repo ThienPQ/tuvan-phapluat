@@ -9,20 +9,36 @@
   <style>
     body {
       background: url('banner.jpg') center/cover no-repeat fixed;
-      color: #fff;
+      background-size: cover; /* Đảm bảo ảnh nền phủ kín */
+      color: #333; /* Màu chữ mặc định cho toàn trang, phù hợp với nền sáng */
     }
     .hero {
-      background-color: rgba(0, 0, 0, 0.6);
+      /* Thay đổi màu nền của hero từ đen tối sang màu trắng trong suốt nhẹ */
+      background-color: rgba(255, 255, 255, 0.85); /* Màu trắng trong suốt 85% */
       padding: 100px 20px;
       text-align: center;
+      color: #333; /* Đổi màu chữ trong hero thành màu tối để dễ đọc */
     }
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
+      color: #d14a00; /* Màu cam/đỏ đậm cho tiêu đề để nổi bật */
+    }
+    .hero p.lead {
+      color: #555; /* Màu xám đậm hơn cho đoạn giới thiệu */
     }
     .section {
       padding: 60px 20px;
-      background-color: rgba(0,0,0,0.6);
+      /* Tương tự, làm sáng nền của section */
+      background-color: rgba(255, 255, 255, 0.95); /* Màu trắng gần như đục cho section */
+      color: #333; /* Màu chữ tối cho section */
+      border: 1px solid rgba(0, 0, 0, 0.125); /* Thêm đường viền nhẹ */
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Thêm bóng nhẹ */
+      margin-top: 30px; /* Thêm khoảng cách nếu cần */
+      margin-bottom: 30px;
+    }
+    .section h2 {
+        color: #d14a00; /* Màu cam/đỏ đậm cho tiêu đề section */
     }
     nav a {
       margin: 0 15px;
@@ -32,7 +48,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="logo-navbar.png" alt="D&A Law" height="40"></a>
+      <a class="navbar-brand" href="index.html"><img src="logo-navbar.png" alt="D&A Law" height="40"></a>
       <div>
         <a href="index.html" class="text-white">Trang chủ</a>
         <a href="gioi-thieu.html" class="text-white">Giới thiệu</a>
