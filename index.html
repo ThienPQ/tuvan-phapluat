@@ -9,46 +9,63 @@
   <style>
     body {
       background: url('banner.jpg') center/cover no-repeat fixed;
-      background-size: cover; /* Đảm bảo ảnh nền phủ kín */
-      color: #333; /* Màu chữ mặc định cho toàn trang, phù hợp với nền sáng */
+      background-size: cover;
+      color: #f8f9fa; /* Màu chữ mặc định cho toàn trang là trắng nhạt */
     }
     .hero {
-      /* Thay đổi màu nền của hero từ đen tối sang màu trắng trong suốt nhẹ */
-      background-color: rgba(255, 255, 255, 0.85); /* Màu trắng trong suốt 85% */
+      background-color: rgba(0, 0, 0, 0.75); /* Nền tối hơn, giữ ảnh banner ẩn nhẹ phía sau */
       padding: 100px 20px;
       text-align: center;
-      color: #333; /* Đổi màu chữ trong hero thành màu tối để dễ đọc */
+      color: #f8f9fa; /* Màu chữ trắng nhạt trong hero */
     }
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
-      color: #d14a00; /* Màu cam/đỏ đậm cho tiêu đề để nổi bật */
+      color: #ffc107; /* Màu vàng cam sáng cho tiêu đề hero */
     }
     .hero p.lead {
-      color: #555; /* Màu xám đậm hơn cho đoạn giới thiệu */
+      color: #dee2e6; /* Màu xám nhạt hơn cho đoạn giới thiệu */
     }
     .section {
       padding: 60px 20px;
-      /* Tương tự, làm sáng nền của section */
-      background-color: rgba(255, 255, 255, 0.95); /* Màu trắng gần như đục cho section */
-      color: #333; /* Màu chữ tối cho section */
-      border: 1px solid rgba(0, 0, 0, 0.125); /* Thêm đường viền nhẹ */
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Thêm bóng nhẹ */
-      margin-top: 30px; /* Thêm khoảng cách nếu cần */
+      background-color: rgba(33, 37, 41, 0.9); /* Màu nền tối (tương tự navbar) với độ trong suốt nhẹ */
+      color: #f8f9fa; /* Màu chữ trắng nhạt trong section */
+      border: 1px solid rgba(255, 255, 255, 0.1); /* Đường viền trắng nhạt */
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Bóng tối mạnh hơn */
+      margin-top: 30px;
       margin-bottom: 30px;
     }
     .section h2 {
-        color: #d14a00; /* Màu cam/đỏ đậm cho tiêu đề section */
+        color: #ffc107; /* Màu vàng cam sáng cho tiêu đề section */
     }
     nav a {
       margin: 0 15px;
+    }
+    /* CSS cho logo */
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
+    /* Điều chỉnh padding của navbar để logo lớn không bị tràn */
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* CSS cho footer */
+    .site-footer {
+        background-color: #212529; /* Màu nền tối tương tự bg-dark */
+        color: #ffcc99; /* Màu cam nhạt */
+        padding: 20px 0;
+    }
+    .site-footer p {
+        margin-bottom: 0;
     }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="logo-navbar.png" alt="D&A Law" height="80"></a>
+      <a class="navbar-brand" href="index.html"><img src="logo-navbar.png" alt="D&A Law"></a>
       <div>
         <a href="index.html" class="text-white">Trang chủ</a>
         <a href="gioi-thieu.html" class="text-white">Giới thiệu</a>
@@ -67,7 +84,7 @@
     <p>Văn phòng luật sư Vĩnh Long & Cộng sự (Dragon & Associates - D&A) được thành lập từ năm 2018, hướng tới mục tiêu trở thành công ty luật nội địa theo chuẩn mực quốc tế, giá thành phù hợp, uy tín với khách hàng trong nước và quốc tế.</p>
   </div>
 
-<footer class="text-center py-4 site-footer">
+  <footer class="text-center py-4 site-footer">
     &copy; 2025 Dragon & Associates Law Firm. All rights reserved.
   </footer>
 </body>
